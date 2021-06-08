@@ -32,14 +32,14 @@ def main():
     for loop_counter_rows in range(0, rows):
         temp_column = []
         for loop_counter_columns in range(0, columns):
-            a_random_number = random.randint(0, 10)
+            a_random_number = random.randint(0, 50)
             temp_column.append(a_random_number)
             print("{0} ".format(a_random_number), end="")
         a_2d_list.append(temp_column)
         print("")
 
     sum = sum_of_numbers(a_2d_list, rows, columns)
-    print("The average of all the numbers is: {0} ".format(sum))
+    print("\nThe average of all the numbers is: {0} ".format(sum))
 
 
 if __name__ == "__main__":
